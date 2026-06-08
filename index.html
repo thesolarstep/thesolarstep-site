@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya | Microbiologist & Researcher</title>
+    <meta name="description" content="Personal website of Aditya, a microbiologist, researcher, science communicator, writer, and educator.">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Background Canvas -->
+    <canvas id="backgroundCanvas"></canvas>
+
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="dna-spinner"></div>
+            <p>Initializing Research Portal...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">ADITYA</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#writing">Writing</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <header id="home" class="section">
+            <div class="hero-container">
+                <div class="hero-content reveal">
+                    <h1>ADITYA</h1>
+                    <p class="tagline">Microbiologist. Researcher. Writer.</p>
+                    <p class="intro-text">Exploring the intersection of microscopic life, scientific inquiry, and the human narrative. Dedicated to uncovering the hidden mechanisms of our world through rigorous research and accessible science communication.</p>
+                    <div class="hero-buttons">
+                        <a href="#research" class="btn btn-primary">Research Projects</a>
+                        <a href="#writing" class="btn btn-secondary">Essays & Poetry</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Research Section -->
+        <section id="research" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Current Research</h2>
+                <div class="grid research-grid">
+                    <article class="card research-card reveal">
+                        <div class="card-content">
+                            <h3>Extremophile Metabolism</h3>
+                            <p>Investigating the metabolic pathways of thermophilic bacteria in volcanic vents to understand early Earth conditions.</p>
+                            <div class="card-tags">
+                                <span>Genomics</span>
+                                <span>Metabolomics</span>
+                                <span>Astrobiology</span>
+                            </div>
+                            <div class="card-links">
+                                <a href="#" class="text-link">View Project &rarr;</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card research-card reveal">
+                        <div class="card-content">
+                            <h3>Microbial Symbiosis</h3>
+                            <p>Mapping the complex interactions between soil microbes and plant root systems to enhance sustainable agriculture.</p>
+                            <div class="card-tags">
+                                <span>Microbiology</span>
+                                <span>Sustainable Ag</span>
+                                <span>Ecology</span>
+                            </div>
+                            <div class="card-links">
+                                <a href="#" class="text-link">View Project &rarr;</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card research-card reveal">
+                        <div class="card-content">
+                            <h3>Antibiotic Resistance</h3>
+                            <p>Analyzing horizontal gene transfer mechanisms in clinical pathogens to identify potential inhibitors of resistance.</p>
+                            <div class="card-tags">
+                                <span>Molecular Biology</span>
+                                <span>Pathology</span>
+                                <span>CRISPR</span>
+                            </div>
+                            <div class="card-links">
+                                <a href="#" class="text-link">View Project &rarr;</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="section bg-dim">
+            <div class="container">
+                <h2 class="section-title reveal">Publications & Presentations</h2>
+                <div class="timeline">
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2026</div>
+                        <div class="timeline-content">
+                            <h3>Journal of Applied Microbiology</h3>
+                            <p>"Novel Pathways in Archaeal Lipid Biosynthesis: Implications for Life in Extreme Environments."</p>
+                            <a href="#" class="btn-small">Download PDF</a>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2025</div>
+                        <div class="timeline-content">
+                            <h3>International Space Science Conference</h3>
+                            <p>Presentation: "Microbial Resilience in Low-Orbit Simulated Environments."</p>
+                            <a href="#" class="btn-small">View Poster</a>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2024</div>
+                        <div class="timeline-content">
+                            <h3>Nature Communications (Contributor)</h3>
+                            <p>"A Global Atlas of the Soil Microbiome: Biodiversity and Functionality."</p>
+                            <a href="#" class="btn-small">Link to Paper</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Writing Section -->
+        <section id="writing" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Writing & Reflections</h2>
+                <div class="filter-controls reveal">
+                    <div class="search-wrapper">
+                        <input type="text" id="writing-search" placeholder="Search essays, poetry...">
+                    </div>
+                    <div class="filter-group">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="essays">Essays</button>
+                        <button class="filter-btn" data-filter="reflections">Reflections</button>
+                        <button class="filter-btn" data-filter="poetry">Poetry</button>
+                    </div>
+                </div>
+                <div class="grid writing-grid reveal">
+                    <article class="card writing-card" data-category="essays">
+                        <div class="card-content">
+                            <span class="category-tag">Essay</span>
+                            <h3>The Invisible Architecture</h3>
+                            <p>Exploring how microbial life forms the literal and metaphorical foundation of our civilization.</p>
+                            <a href="#" class="text-link">Read More &rarr;</a>
+                        </div>
+                    </article>
+
+                    <article class="card writing-card" data-category="reflections">
+                        <div class="card-content">
+                            <span class="category-tag">Reflection</span>
+                            <h3>Entropy and the Laboratory</h3>
+                            <p>Personal thoughts on the beauty of experimental failure and the persistence of inquiry.</p>
+                            <a href="#" class="text-link">Read More &rarr;</a>
+                        </div>
+                    </article>
+
+                    <article class="card writing-card" data-category="poetry">
+                        <div class="card-content">
+                            <span class="category-tag">Poetry</span>
+                            <h3>Starlight and Cytoplasm</h3>
+                            <p>A collection of verses reflecting on the shared origins of stars and cells.</p>
+                            <a href="#" class="text-link">Read More &rarr;</a>
+                        </div>
+                    </article>
+
+                    <article class="card writing-card" data-category="essays">
+                        <div class="card-content">
+                            <span class="category-tag">Essay</span>
+                            <h3>Democratizing the Microscope</h3>
+                            <p>The role of open-access science communication in modern society.</p>
+                            <a href="#" class="text-link">Read More &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CV Section -->
+        <section id="cv" class="section bg-dim">
+            <div class="container">
+                <h2 class="section-title reveal">Curriculum Vitae</h2>
+                <div class="cv-grid">
+                    <div class="cv-column reveal">
+                        <h3 class="cv-heading">Education</h3>
+                        <ul class="cv-list">
+                            <li>
+                                <strong>PhD in Microbiology</strong>
+                                <p>Institute of Molecular Biosciences | 2021 - 2025</p>
+                            </li>
+                            <li>
+                                <strong>MSc in Biological Sciences</strong>
+                                <p>University of Excellence | 2019 - 2021</p>
+                            </li>
+                        </ul>
+                        
+                        <h3 class="cv-heading">Experience</h3>
+                        <ul class="cv-list">
+                            <li>
+                                <strong>Senior Research Fellow</strong>
+                                <p>BioCore Research Labs | 2025 - Present</p>
+                            </li>
+                            <li>
+                                <strong>Graduate Researcher</strong>
+                                <p>Molecular Dynamics Group | 2021 - 2025</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cv-column reveal">
+                        <h3 class="cv-heading">Awards & Honors</h3>
+                        <ul class="cv-list">
+                            <li>
+                                <strong>Young Scientist Fellowship</strong>
+                                <p>National Research Council | 2025</p>
+                            </li>
+                            <li>
+                                <strong>Innovation in Science Communication</strong>
+                                <p>Sci-Comm Global Awards | 2024</p>
+                            </li>
+                        </ul>
+
+                        <h3 class="cv-heading">Technical Skills</h3>
+                        <div class="skill-tags">
+                            <span>Aseptic Technique</span>
+                            <span>CRISPR-Cas9</span>
+                            <span>NGS Analysis</span>
+                            <span>Python (Bioinformatics)</span>
+                            <span>SEM Imaging</span>
+                            <span>Public Speaking</span>
+                        </div>
+                        
+                        <div class="cv-download">
+                            <a href="assets/docs/Aditya_CV.pdf" class="btn btn-primary" download>Download Full CV (PDF)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Get In Touch</h2>
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <p>Whether you're interested in collaborative research, speaking engagements, or just want to discuss the wonders of the microbial world, my door is always open.</p>
+                        <ul class="contact-links">
+                            <li><strong>Email:</strong> <a href="mailto:aditya@research.email">aditya@research.email</a></li>
+                            <li><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/aditya-research</a></li>
+                            <li><strong>GitHub:</strong> <a href="#">github.com/aditya-bio</a></li>
+                        </ul>
+                    </div>
+                    <form id="contact-form" class="contact-form reveal">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Your message..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Aditya. Built for exploration and inquiry.</p>
+            <p class="footer-sub">Designed with science and philosophy in mind.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
